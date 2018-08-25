@@ -7,12 +7,12 @@ class Bootstrap{
 	public function __construct($request){
 		$this->request = $request;
 		//var_dump($request);
-		if($this->request['controller'] == ""){
+		if(empty($this->request['controller'])  || $this->request['controller'] == ""){
 			$this->controller = 'home';
 		} else {
 			$this->controller = $this->request['controller'];
 		}
-		if($this->request['action'] == ""){
+		if(empty($this->request['action'])  ||$this->request['action'] == ""){
 			//echo "here im in action if loop<br/>";
 			$this->action = 'index';
 		} else {
