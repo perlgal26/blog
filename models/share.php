@@ -3,8 +3,12 @@
 		
 		public function Index(){
 			//echo "<br/>models/share.php";
-			$this->query('SELECT * FROM shares ORDER BY create_date DESC');
+			//$this->query('SELECT * FROM shares ORDER BY create_date DESC');
+			//$rows = $this->resultSet();
+			//$userId = $rows['user_id'];
+			$this->query('SELECT u.name,s.id,s.title,s.body,s.link,s.create_date FROM  users u INNER JOIN shares s ON u.id = s.user_id');
 			$rows = $this->resultSet();
+			//print_r($rows);
 			return $rows;
 
 		}
@@ -34,6 +38,8 @@
 			return;
 
 		}
+		
+		
 	}
 
 ?>

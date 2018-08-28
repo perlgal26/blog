@@ -18,5 +18,7 @@ class Shares extends Controller{
 		//var_dump($viewmodel);
 		$this->ReturnView($viewmodel->add(),true);
 	}
+	
+	
 }
 ?>

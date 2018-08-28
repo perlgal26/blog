@@ -11,6 +11,7 @@
 			<br/>
 			<p><?php echo $item['body']; ?></p>
 			<p><?php echo $item['link']; ?></p>
+			<p><small>Submitted by <?php echo $item['name']; ?></small></p>
 		</div>
 	<?php endforeach;?>
 </div>

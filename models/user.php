@@ -45,7 +45,7 @@
 				$row = $this->single();
 				if ($row){
 					//echo "Logged In";
-					$_SESSION['is_logged_in'] =true;
+					$_SESSION['is_logged_in'] = true;
 					$_SESSION['user_data'] = array(
 						"id" => $row['id'],
 						"name" => $row['name'],
@@ -53,7 +53,8 @@
 					);
 					//var_dump($_SESSION);
 					//Redirect
-					//header('Location: '.ROOT_URL.ROOT_USERL_CONTROLLER.);
+					//echo ROOT_URL;	
+					header('Location: '.ROOT_URL.ROOT_SHARE_CONTROLLER);
 				
 				}
 				else{
