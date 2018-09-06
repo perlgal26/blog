@@ -49,6 +49,10 @@ abstract class Model{
 		$this->execute();
 		return $this->stmt->fetch(PDO::FETCH_ASSOC);
 	}
+	
+	
+	
+	
 
 }
 ?>

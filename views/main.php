@@ -3,7 +3,7 @@
 		<title>Shareboard</title>
 		<link  rel="stylesheet" href="assets/css/style.css"  type=”text/css”>
 		<link  rel="stylesheet" href="assets/css/bootstrap.css">
-		
+		<script src="assets/js/blog.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -15,8 +15,8 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="<?php echo ROOT_URL.ROOT_HOME_CONTROLLER;?>">Home</a>
-          </li>
+            <!--<a class="nav-link" href="<?php echo ROOT_URL.ROOT_HOME_CONTROLLER;?>">Home</a>
+          </li>-->
           <li class="nav-item active">
             <a class="nav-link" href="<?php echo ROOT_URL.ROOT_SHARE_CONTROLLER;?>">Shares</a>
           </li>

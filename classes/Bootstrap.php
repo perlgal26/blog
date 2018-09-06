@@ -12,12 +12,14 @@ class Bootstrap{
 		} else {
 			$this->controller = $this->request['controller'];
 		}
-		if(empty($this->request['action'])  ||$this->request['action'] == ""){
+		if(empty($this->request['action'])  || $this->request['action'] == ""){
 			//echo "here im in action if loop<br/>";
 			$this->action = 'index';
 		} else {
 			$this->action = $this->request['action'];
 		}
+		
+		
 	}
 
 	public function createController(){

@@ -20,7 +20,7 @@
 				//verify
 				if($this->lastInsertId()){
 					//Redirect
-					//header('Location: '.ROOT_URL.ROOT_USERL_CONTROLLER.);
+					header('Location: '.ROOT_URL.ROOT_USERL_CONTROLLER);
 					//echo "Registered";
 				}
 			}

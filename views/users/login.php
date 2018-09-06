@@ -11,7 +11,7 @@
     <input type="password" class="form-control" name="password">
   </div>
   <button type="submit" name='submit' class="btn btn-primary" value="Submit">Submit</button>
-
+	  <a class="btn btn-danger" href="<?php echo ROOT_URL.ROOT_SHARE_CONTROLLER;?>">Cancel</a>
 </form>
 	
 </div>
